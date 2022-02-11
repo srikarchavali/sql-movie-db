@@ -13,7 +13,7 @@ let sequelize = new Sequelize(process.env.MYSQL_URI);
 let connetion = async()=>{
     try {
         await sequelize.authenticate()
-        await console.log('Connected to database')
+        console.log('Connected to database')
     } catch (error) {
         console.log(error)
     }

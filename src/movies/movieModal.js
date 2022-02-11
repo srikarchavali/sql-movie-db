@@ -10,9 +10,14 @@ const Film = sequelize.define('Nteflix', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    // rating: {
-
-    // }
+    rating: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    releaseYear: {
+        type: DataTypes.INTEGER,
+        allowNull: true  
+    }
 })
 
 module.exports = Film;
