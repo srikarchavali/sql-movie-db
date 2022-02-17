@@ -1,5 +1,4 @@
 
-const Argv = require('yargs');
 const yargs = require('yargs');
 const {hideBin} = require('yargs/helpers');
 const { addFilm, list, deleteTable, findOne, updateOne, deleteOne } = require('./movies/movieMethod');
